@@ -1,2 +1,2 @@
 # DS
-Data Structures and Algorithms with JAVA
+Data Structures and Algorithms with JAVA for learning

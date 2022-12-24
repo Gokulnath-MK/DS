@@ -10,21 +10,20 @@ public class PrimeNumber {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number to check whether its prime or not");
         int a = sc.nextInt();
-        boolean prime = false;
         if (a == 1) {
             System.out.println("1 is neither prime nor composite");
             return;
         } else {
-            for (int i = 2; i <= a; i++) {
-                if (a % i == 0 && i == a) {
-                    prime = true;
+            for (int i = 2; i * i <= a; i++) {
+                if (a % i == 0) {
+                    System.out.println("Its not a prime number");
+                    return;
                 }
+
             }
         }
-        if (prime) {
-            System.out.println("Its prime");
-        } else {
-            System.out.println("not prime");
-        }
+        System.out.println("Its prime number");
     }
+
+
 }
